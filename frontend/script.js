@@ -1,7 +1,6 @@
 async function buscarFilmes() {
-    // acessar a rota GET do backend, trazer os filmes e mostrar os filmes na tela
-    const resposta = await fetch("https://filmes-backend.vercel.app/") // resposta do backend
-    const filmes = await resposta.json() // converte a resposta num objeto JS
+    const resposta = await fetch("https://filmes-anaegi.vercel.app/") 
+    const filmes = await resposta.json() 
     const sectionFilmes = document.querySelector(".filmes")
 
     filmes.forEach((filme) => {
