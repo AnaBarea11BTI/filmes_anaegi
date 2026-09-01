@@ -1,0 +1,28 @@
+GET http://localhost:3000/
+
+###
+POST http://localhost:3000/create
+Content-Type: application/json
+
+{
+    "titulo": "Homem-Aranha: Sem Volta Pra Casa",
+    "genero": "Ação / Aventura",
+    "duracao": 145,
+    "classificacao": 14
+
+}
+
+###
+DELETE http://localhost:3000/delete/13
+
+###
+PUT http://localhost:3000/update/2
+Content-Type: application/json
+
+{
+    "titulo": "O Senhor dos Anéis: As Duas Torres",
+    "genero": "Comédia",
+    "duracao": 189,
+    "classificacao": 18
+
+}
